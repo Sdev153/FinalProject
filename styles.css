@@ -1,0 +1,51 @@
+/* Final Project SDEV153 */
+
+html 
+{
+   background-color:#006bb3;/*BG color for the site*/
+}
+
+header 
+{
+	position: relative;
+    padding: 0.5em;
+}
+
+/*Style for main navagation*/
+.sitenavigation 
+{
+	text-align:center;
+	border-radius: 25px;
+    background: #f2f2f2;
+    padding: 20px;
+    width: 100px;
+    height: 400px; 
+}
+ 
+ /*Style for article*/
+.articlecontainer
+{
+	float:top;
+	text-align:center;
+	border-radius: 25px;
+    background: #f2f2f2;
+    padding: 20px;
+    width: 600px;
+    height: 700px;
+	margin-left:300px;
+	margin-top:20px;
+	position:absolute;
+	top:0em;
+}
+
+/*Style for community navagation*/
+.communitynavigation
+{
+	margin-top:20px;
+	text-align:center;
+	border-radius: 25px;
+    background: #f2f2f2;
+    padding: 20px;
+    width: 100px;
+    height: 500px;
+}
