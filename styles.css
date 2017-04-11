@@ -19,7 +19,7 @@ header
     background: #f2f2f2;
     padding: 20px;
     width: 100px;
-    height: 500px;
+    height: 550px;
 	margin-top:20px;
 }
  
@@ -76,25 +76,28 @@ header
     background: #f2f2f2;
     padding: 20px;
     width: 250px;
-    height: 300px;
+    height: 400px;
 	margin-left:960px;
 	margin-top:20px;
 	position:fixed;
-	top:0em;
+	top:2px;
 }
 
 .staffimage1
 {
-	position:relative;
+
+	position:absolute;
 	top:0px;
 	left:0px;
+	margin-left:0px;
 }
 
 .staffimage2
 {
-	position:relative;
+	position:absolute;
 	top:0px;
 	left:0px;
+	margin-left:0px;
 }
 
 /* Dropdown Button */
