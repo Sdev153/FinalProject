@@ -1,3 +1,13 @@
+	 <!--
+         Final Project SDEV153
+         Filename: error.php
+         Author:   Justin Fisher
+		 Author:
+		 Author:
+		 Author:
+         Date:     4/22/2017
+		 Add your name to the author list if you edit this page
+      -->
 <?php
 $error = filter_input(INPUT_GET, 'err', $filter = FILTER_SANITIZE_STRING);
  

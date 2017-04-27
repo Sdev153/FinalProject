@@ -1,23 +1,34 @@
-<!--Final Project SDEV153-->
-
+	 <!--
+         Final Project SDEV153
+         Filename: register.php
+         Author:   Justin Fisher
+		 Author:
+		 Author:
+		 Author:
+         Date:     4/22/2017
+		 Add your name to the author list if you edit this page
+      -->
 <?php
 /* 
 	 This comment is inside the php tag so it isnt visible to the public 
 	 php stuff for mysql database connetion starts here 
-	 This is probebly really insecure, but it works for this project 
+	 This uses the PHP function password_hash to hash and salt the users password. 
 */
 require_once('connect.php'); // The file being refrenced contains the username and pass for MySql.. No not the root, I'm not that stupid....
-if(isset($_POST) & !empty($_POST)){
+if(isset($_POST) & !empty($_POST))
+{
 	$username = mysqli_real_escape_string($connection, $_POST['username']);
 	$email = mysqli_real_escape_string($connection, $_POST['email']);
-	$password = md5($_POST['password']);
+	$hashed_password = password_hash($_POST['password'], PASSWORD_DEFAULT); // hash and salt the password before storing it in the DB
 
-	$sql = "INSERT INTO `users` (username, email, password) VALUES ('$username', '$email', '$password')";
+	$sql = "INSERT INTO `users` (username, email, password) VALUES ('$username', '$email', '$hashed_password')";
 	$result = mysqli_query($connection, $sql);
-	if($result){
+	if($result)
+	{
 		$smsg = "User Registration successfull";
-		//header("Location: login.php");
-	}else{
+	}
+	else
+	{
 		$fmsg = "User registration failed";
 		header("Location: error.php");
 	}

@@ -1,30 +1,42 @@
-<!--Final Project SDEV153-->
-
-
+	 <!--
+         Final Project SDEV153
+         Filename: login.php
+         Author:   Justin Fisher
+		 Author:
+		 Author:
+		 Author:
+         Date:     4/22/2017
+		 Add your name to the author list if you edit this page
+      -->
 <?php
 /* 
 	 This comment is inside the php tag so it isnt visible to the public 
 	 php stuff for mysql database connetion starts here 
-	 This is probebly really insecure, but it works for this project 
+	 This uses the PHP function password_verify to check the hashed and salted password from the DB against the users plain text password. 
 */
 session_start();
 require_once('connect.php'); // The file being refrenced contains the username and pass for MySql.. No not the root, I'm not that stupid....
-if(isset($_POST) & !empty($_POST)){
+if(isset($_POST) & !empty($_POST))
+{
 	$username = mysqli_real_escape_string($connection, $_POST['username']);
-	$password = md5($_POST['password']);
-
-	$sql = "SELECT * FROM `users` WHERE username='$username' AND password='$password'";
-	$result = mysqli_query($connection, $sql);
-	$count = mysqli_num_rows($result);
-	if($count == 1){
+	$password = ($_POST['password']); //get the plain text password
+	$sql = "SELECT password FROM users WHERE username = '$username'"; //get the hashed and salted password from the DB
+	$query = mysqli_query($connection, $sql);
+	$result = mysqli_fetch_assoc($query);
+	$hash = $result['password']; // hashed and salted password from the DB
+	if(password_verify($password, $hash))
+	{
 		$_SESSION['username'] = $username;
-	}else{
+	}
+	else
+	{
 		$fmsg = "Invalid Username/Password";
 	}
 }
-if(isset($_SESSION['username'])){
-	$smsg = "User already logged in";
-	
+if(isset($_SESSION['username']))
+{
+	//$smsg = "User already logged in";
+	$accmsg =  "You are currently logged in as $username. Please logout to close the session.";
 }
 ?>
 
@@ -62,17 +74,17 @@ if(isset($_SESSION['username'])){
 		 <!--begin nav community -->
 		 <nav class="communitynavigation">
 			<p>Our Communities</p>
-            <p><a href="indexMain.html">Alamo</a></p>
-            <p><a href="directory.html">Crawfordsville</a></p>
-            <p><a href="news.html">Darlington</a></p>
-            <p><a href="events.html">Ladoga</a></p>
-			<p><a href="time_capsule.html">Linden</a></p>
-            <p><a href="community.html">New Market</a></p>
-            <p><a href="chamber.html">New Richmond</a></p>
-            <p><a href="business.html">New Ross</a></p>
-			<p><a href="members.html">Waveland</a></p>
-            <p><a href="contact.html">Waynetown</a></p>
-			<p><a href="contact.html">Wingate</a></p>
+            <p><a href="#">Alamo</a></p>
+            <p><a href="#">Crawfordsville</a></p>
+            <p><a href="#">Darlington</a></p>
+            <p><a href="#">Ladoga</a></p>
+			<p><a href="#">Linden</a></p>
+            <p><a href="#">New Market</a></p>
+            <p><a href="#">New Richmond</a></p>
+            <p><a href="#">New Ross</a></p>
+			<p><a href="#">Waveland</a></p>
+            <p><a href="#">Waynetown</a></p>
+			<p><a href="#">Wingate</a></p>
          </nav>
 		 <!--end nav community -->
 	</div>
@@ -81,6 +93,8 @@ if(isset($_SESSION['username'])){
 	<!--begin div article container -->
 	<div class="articlecontainer">
 		 <header>
+		 <?php if(isset($accmsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $accmsg; ?> </div><?php } ?>
+		 <input type="button" onclick="location.href='logout.php';" value="Logout" <!-- This line is javascript -->
 			<h1><img src="images/BGheaderv2.jpg" alt="Placeholder" width="590" height="160"></h1><!--header image-->
 			<h2>Crawfordsville & Montgomery County Chamber<br>Member Login</h2>
 		</header>
@@ -103,6 +117,7 @@ if(isset($_SESSION['username'])){
 		</fieldset>
         <br><button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
 		<input type="button" onclick="location.href='register.php';" value="Register" <!-- This line is javascript -->
+		<input type="button" onclick="location.href='logout.php';" value="Logout" <!-- This line is javascript -->
       </form>
 		
 	</div>
