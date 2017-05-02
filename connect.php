@@ -8,7 +8,7 @@ $username = 'test'; // DB user
 $password = 'rD5U3PVRxBqFhQ8Y'; // DB Password
 $host = 'sdev153.libfoobar.so'; // Address of DB server
 $port = '3306';
-$connection = mysqli_connect($host, $username, $password);
+$connection = mysqli_connect($host, $port, $username, $password);
 if (!$connection){
     die("Error: Database Connection Failed ಠ╭╮ಠ" . mysqli_error($connection));
 }
