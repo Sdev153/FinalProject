@@ -2,11 +2,7 @@
          Final Project SDEV153
          Filename: register.php
          Author:   Justin Fisher
-		 Author:
-		 Author:
-		 Author:
          Date:     4/22/2017
-		 Add your name to the author list if you edit this page
       -->
 <?php
 /* 
@@ -30,7 +26,6 @@ if(isset($_POST) & !empty($_POST))
 	else
 	{
 		$fmsg = "User registration failed";
-		header("Location: error.php");
 	}
 }
 
@@ -90,7 +85,7 @@ if(isset($_POST) & !empty($_POST))
 	<!--begin div article container -->
 	<div class="articlecontainer">
 		 <header>
-			<h1><img src="images/BGheaderv2.jpg" alt="Placeholder" width="590" height="160"></h1><!--header image-->
+			<h1><img src="images/BGheaderv2.jpg" alt="Placeholder" class="headerimage"></h1><!--header image-->
 			<h2>Crawfordsville & Montgomery County Chamber<br>New Member Registration</h2>
 		</header>
 		

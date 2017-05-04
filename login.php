@@ -2,11 +2,7 @@
          Final Project SDEV153
          Filename: login.php
          Author:   Justin Fisher
-		 Author:
-		 Author:
-		 Author:
          Date:     4/22/2017
-		 Add your name to the author list if you edit this page
       -->
 <?php
 /* 
@@ -95,7 +91,7 @@ if(isset($_SESSION['username']))
 		 <header>
 		 <?php if(isset($accmsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $accmsg; ?> </div><?php } ?>
 		 <input type="button" onclick="location.href='logout.php';" value="Logout" <!-- This line is javascript -->
-			<h1><img src="images/BGheaderv2.jpg" alt="Placeholder" width="590" height="160"></h1><!--header image-->
+			<h1><img src="images/BGheaderv2.jpg" alt="Placeholder" width="590" height="160" class="headerimage"></h1><!--header image-->
 			<h2>Crawfordsville & Montgomery County Chamber<br>Member Login</h2>
 		</header>
 		
