@@ -85,7 +85,8 @@ if(isset($_POST) & !empty($_POST))
 	<!--begin div article container -->
 	<div class="articlecontainer">
 		 <header>
-			<h1><img src="images/BGheaderv2.jpg" alt="Placeholder" class="headerimage"></h1><!--header image-->
+			<h1><img src="images/BGheaderv3.png" alt="Crawfordsville & Montgomery County Chamber of Commerce" class="headerimage"></h1><!--header image-->
+			<h1 class="headertext">Crawfordsville & Montgomery County<br> Chamber of Commerce</h1>
 			<h2>Crawfordsville & Montgomery County Chamber<br>New Member Registration</h2>
 		</header>
 		

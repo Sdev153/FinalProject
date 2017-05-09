@@ -13,7 +13,9 @@ html
 {
     /*Fix the repeting background thing...*/
     background: linear-gradient(to bottom, #0066cc 0%, #001a66 100%);/*BG color for the site*/
-    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    
+    /*Font family*/
+    font-family: sans-serif, Arial, Tahoma, Helvetica;
 
 }
 
@@ -28,7 +30,26 @@ header
 {
 	border-radius: 25px;
 	width:890px;
-	height:270px;
+	height:200px;
+	margin-top:-20px;
+}
+
+/*Style for the header text over the header image*/
+.headertext
+{
+	position:absolute;
+	text-align:center;
+	top:0px;
+	left:160px;
+	color:white;
+
+}
+
+.headerimagediv
+{
+	
+	width:890px;
+	height:200px;
 	margin-top:-20px;
 }
 /*Style for main navagation*/

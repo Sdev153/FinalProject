@@ -7,8 +7,8 @@
 $username = 'test'; // DB user
 $password = 'rD5U3PVRxBqFhQ8Y'; // DB Password
 $host = 'sdev153.libfoobar.so'; // Address of DB server
-$port = '3306';
-$connection = mysqli_connect($host, $port, $username, $password);
+//$port = '3306'; This dosent work for some reason... I removed it from the mysqli_connect so it would connect.
+$connection = mysqli_connect($host, $username, $password);
 if (!$connection){
     die("Error: Database Connection Failed ಠ╭╮ಠ" . mysqli_error($connection));
 }

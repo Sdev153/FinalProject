@@ -89,14 +89,19 @@ if(isset($_SESSION['username']))
 	<!--begin div article container -->
 	<div class="articlecontainer">
 		 <header>
-		 <?php if(isset($accmsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $accmsg; ?> </div><?php } ?>
-		 <input type="button" onclick="location.href='logout.php';" value="Logout" <!-- This line is javascript -->
-			<h1><img src="images/BGheaderv2.jpg" alt="Placeholder" width="590" height="160" class="headerimage"></h1><!--header image-->
-			<h2>Crawfordsville & Montgomery County Chamber<br>Member Login</h2>
+			 <div class="loginmessagediv">
+			 <!--The logout message that apears when you login, also provides a logout button-->
+		 	<?php if(isset($accmsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $accmsg; ?> <input type="button" onclick="location.href='logout.php';" value="Logout"</div><?php } ?>
+	</div>
+		 <br>
+	 <div class="headerimagediv">
+		<h1><img src="images/BGheaderv3.png" alt="Crawfordsville & Montgomery County Chamber of Commerce" class="headerimage"></h1><!--header image-->
+		<h1 class="headertext">Crawfordsville & Montgomery County<br> Chamber of Commerce</h1>
+	</div>
+		<h2>Crawfordsville & Montgomery County Chamber<br>Member Login</h2>
 		</header>
-		
+	
 		<article>
-			
 <div class="container">
       <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $smsg; ?> </div><?php } ?>
       <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
@@ -117,4 +122,6 @@ if(isset($_SESSION['username']))
       </form>
 		
 	</div>
+	</article>
 	<!--end div article container -->
+	
