@@ -167,7 +167,26 @@ header
 	position:absolute;
 	top:0em;
 }
-
+/*styles for business parks article container*/
+.articlecontainerbusinessparks
+{
+	float:top;
+	text-align:center;
+	border-radius: 25px;
+    background: #f2f2f2;
+    padding: 20px;
+    width: 900px;
+    height: 750px;
+	margin-left:155px;
+	margin-top:20px;
+	position:absolute;
+	top:0em;
+}
+/*style rule for business parks text headers*/
+.businessp, .businessp1 {
+    color:blue;
+    font-weight: bold;	
+	}
 
 /*style rule for business development text header and text*/
 .businessd {
