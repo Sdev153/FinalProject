@@ -100,9 +100,9 @@ header
 	border-radius: 25px;
     background: #f2f2f2;
     padding: 20px;
-    width: 800px;
-    height: 1000px;
-	margin-left:210px;
+    width: 900px;
+    height: 1100px;
+	margin-left:155px;
 	margin-top:20px;
 	position:absolute;
 	top:0em;
@@ -211,6 +211,23 @@ header
 	border-radius: 25px;
 	left:20px;
 }
+
+/*Style for Facebook Share Button*/
+.FBshare
+{
+	position:absolute;
+	bottom:60px;
+}
+
+/*Style for Twitter Follow button*/
+.TwitterFollowBtn
+{
+	position:absolute;
+	bottom:20px;
+}
+
+
+/*Nav Dropdown menu Style stuff*/
 
 
 /* Dropdown Button */
