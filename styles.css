@@ -152,7 +152,32 @@ header
 	position:absolute;
 	top:0em;
 }
+/*styles for business development article container*/
+.articlecontainerbusinessdevelopement
+{
+	float:top;
+	text-align:center;
+	border-radius: 25px;
+    background: #f2f2f2;
+    padding: 20px;
+    width: 900px;
+    height: 450px;
+	margin-left:155px;
+	margin-top:20px;
+	position:absolute;
+	top:0em;
+}
 
+
+/*style rule for business development text header and text*/
+.businessd {
+    color:blue;
+    font-weight: bold;	
+	}
+.businessd1{
+	width: 850px
+}
+	
 /*Style for the road to success header text*/
 .aboutheadtext
 {
