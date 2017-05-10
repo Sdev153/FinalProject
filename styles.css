@@ -118,7 +118,21 @@ header
     padding: 20px;
     width: 900px;
     height: 1100px;
-	margin-left:210px;
+	margin-left:155px;
+	margin-top:20px;
+	position:absolute;
+	top:0em;
+}
+.articlecontainerbusinessoftheyear
+{
+	float:top;
+	text-align:center;
+	border-radius: 25px;
+    background: #f2f2f2;
+    padding: 20px;
+    width: 900px;
+    height: 1100px;
+	margin-left:155px;
 	margin-top:20px;
 	position:absolute;
 	top:0em;
@@ -148,6 +162,63 @@ header
 	width:375px;
 }
 
+/*style for text business of the year*/
+.business{
+	float: left;
+	color: green;
+	
+}
+.business2 {
+	color: blue;
+	position:absolute;
+	top:300px;
+	left: 250px;
+	font-weight:bold;
+	
+}
+.business3 {
+	position: absolute;
+	top: 350px;
+	left: 280px;
+	font-weight:bold;
+	color: blue;
+}
+.business4 {
+	position:absolute;
+	top:500px;
+	left:75px;
+	color: blue;	
+}
+.business5 {
+	position:absolute;
+	top:520px;
+	left:265px;
+	color: blue;	
+}
+.business6 {
+	position:absolute;
+	top:560px;
+	left:300px;
+	color: blue;
+	}
+.business7 {
+	position:absolute;
+	top:920px;
+	left:75px;
+	color: blue;
+	}
+	.business8 {
+	position:absolute;
+	top:950px;
+	left:170px;
+	color: blue;
+	}
+	.business9 {
+	position:absolute;
+	top:990px;
+	left:220px;
+	color: blue;
+	}
 /*The form for the contact info*/
 .contactinfo
 {
@@ -194,6 +265,19 @@ header
 	left:50px;
 	margin-left:50px;
 }
+/*images for business of the year*/
+.businessimage {
+ position: absolute;
+ bottom:650px;
+ left:190px;
+
+}
+	
+.businessimage2 {
+position: absolute;
+bottom:200px;
+left:310px;
+}		
 
 
 /*Style for Time Capsule article image*/
