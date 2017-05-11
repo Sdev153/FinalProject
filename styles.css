@@ -244,6 +244,17 @@ header
 	height:500px;
 	width:375px;
 }
+/*styles for ul tourist info*/
+ul{
+position:absolute;
+top: 700px;
+left: 300px;	
+	
+}
+/*Styles for text header tourist info*/
+.tourist {
+	color: blue;
+}
 /*Styles for text headers area links*/
 .area, .area1, .area2 {
 	color:blue;
