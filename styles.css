@@ -12,8 +12,7 @@ Final Project SDEV153
 html 
 {
     /*Fix the repeting background thing...*/
-    background: linear-gradient(to bottom, #0066cc 0%, #001a66 100%);/*BG color for the site*/
-    
+    background: linear-gradient(to bottom, #0066cc 0%, #001a66 100%)repeat;/*BG color for the site*/
     /*Font family*/
     font-family: sans-serif, Arial, Tahoma, Helvetica;
 
@@ -123,6 +122,34 @@ header
 	position:absolute;
 	top:0em;
 }
+.articlecontainerlodging
+{
+	float:top;
+	text-align:center;
+	border-radius: 25px;
+    background: #f2f2f2;
+    padding: 20px;
+    width: 900px;
+    height: 2400px;
+	margin-left:155px;
+	margin-top:20px;
+	position:absolute;
+	top:0em;
+}
+.articlecontainerdining
+{
+	float:top;
+	text-align:center;
+	border-radius: 25px;
+    background: #f2f2f2;
+    padding: 20px;
+    width: 900px;
+    height: 4700px;
+	margin-left:155px;
+	margin-top:20px;
+	position:absolute;
+	top:0em;
+}
 .articlecontainerbusinessoftheyear
 {
 	float:top;
@@ -166,6 +193,22 @@ header
 	position:absolute;
 	top:0em;
 }
+/*styles for church faith article container*/
+.articlecontainerchurchfaith
+{
+	float:top;
+	text-align:center;
+	border-radius: 25px;
+    background: #f2f2f2;
+    padding: 20px;
+    width: 900px;
+    height: 450px;
+	margin-left:155px;
+	margin-top:20px;
+	position:absolute;
+	top:0em;
+}
+
 /*styles for business development article container*/
 .articlecontainerbusinessdevelopement
 {
@@ -207,7 +250,7 @@ header
 	
 }
 /*style rule for business parks text headers*/
-.businessp, .businessp1 {
+.businessp, .businessp1, .church {
     color:blue;
     font-weight: bold;	
 	}
@@ -233,7 +276,7 @@ header
 {
 	position:absolute;
 	left:25px;
-	top:750px;
+	top:650px;
 }
 
 /*Style for paragraph for road to success*/
@@ -243,6 +286,14 @@ header
 	right:30px;
 	height:500px;
 	width:375px;
+}
+.aboutheadtextP2
+{
+	position:absolute;
+	left:30px;
+	top:700px;
+	height:500px;
+	width:345px;
 }
 /*styles for ul tourist info*/
 ul{
