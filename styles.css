@@ -182,6 +182,11 @@ header
 	position:absolute;
 	top:0em;
 }
+/*style rule for recreation and atrractions text headers*/
+.recreation, .recreation1, .recreation2, .recreation3 {
+	color: blue;
+	
+}
 /*style rule for business parks text headers*/
 .businessp, .businessp1 {
     color:blue;
