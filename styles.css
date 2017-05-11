@@ -244,6 +244,11 @@ header
 	height:500px;
 	width:375px;
 }
+/*Styles for text headers area links*/
+.area, .area1, .area2 {
+	color:blue;
+	font-weight: bold;
+}
 
 /*style for text business of the year*/
 .business{
